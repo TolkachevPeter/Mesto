@@ -1,0 +1,12 @@
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* .popup__close_img {
+  right: -50px;
+} */
