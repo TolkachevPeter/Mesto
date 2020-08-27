@@ -15,23 +15,20 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
                 }
             },
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'] // добавили минификацию CSS
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [{
-                    loader: 'file-loader',
-                }, ],
-            },
+            // {
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     use: [{
+            //         loader: 'file-loader',
+            //     }, ],
+            // },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
@@ -57,14 +54,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({ 
-            filename: 'style.[contenthash].css',
-        }),
-        new HtmlWebpackPlugin({
-            inject: false,
-            template: './src/index.html',
-            filename: 'index.html'
-        }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -79,6 +68,11 @@ module.exports = {
                 preset: ['default'],
             },
             canPrint: true
-        })
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: "./src/index.html",
+            filename: "index.html"
+        }),
     ]
 };
