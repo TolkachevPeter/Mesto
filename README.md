@@ -26,20 +26,23 @@ https://tolkachevpeter.github.io/Mesto/
 Перед началом работы необходимо проверить наличие установленного node.js и npm
 
 Скопируйте проект на компьютер:
-
+```
 https://github.com/TolkachevPeter/Mesto.git
-
+```
 Установите зависимости:
-
+```
 npm install
-
+```
 # Работа
 Для локальной разработки с поднятием сервера используйте:
-
+```
 npm run dev
+```
 Для сборки версии в продакшен:
-
+```
 npm run build
+```
 Для деплоя на сервисе GitHub Pages используйте:
-
+```
 npm run deploy
+```
