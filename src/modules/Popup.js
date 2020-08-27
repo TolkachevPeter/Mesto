@@ -1,5 +1,5 @@
 //комментарий перенес в PopupImage
-class Popup {
+export default class Popup {
   constructor(popup) {
     this.popup = popup;
     this.popup.querySelector('.popup__close').addEventListener('click', function (event) {

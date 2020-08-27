@@ -1,3 +1,14 @@
+import './pages/index.css';
+
+import Api from './modules/Api';
+import Card from './modules/Card';
+import CardList from './modules/CardList';
+import errorMessages from './modules/errorMessages';
+import FormValidator from './modules/FormValidator';
+import Popup from './modules/Popup';
+import PopupImage from './modules/PopupImage';
+import UserInfo from './modules/UserInfo';
+
 const
   popupNew = new Popup(document.querySelector('#popup-new')),
   popupProfile = new Popup(document.querySelector('#popup-edit')),
