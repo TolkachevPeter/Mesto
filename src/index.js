@@ -15,8 +15,9 @@ const
   popupImage = new PopupImage(document.querySelector('#popup-image')),
   validEdit = new Validation(document.forms.edit, errorMessages),
   validNew = new Validation(document.forms.new, errorMessages),
+  serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort12' : 'https://nomoreparties.co/cohort12',
   apiServer = new Api({
-    baseUrl: 'https://nomoreparties.co/cohort12',
+    baseUrl: serverUrl,
     headers: {
       authorization: 'cf9507e2-f20f-44ff-8a3f-06f8e0491d03',
       'Content-Type': 'application/json'
