@@ -1,4 +1,4 @@
-class Validation {
+export default class Validation {
     constructor(form, messages) {
         this.form = form;
         this.messages = messages;
