@@ -19,3 +19,8 @@ Cервис, где люди делятся фотографиями интер�
 
 # Демо
 https://tolkachevpeter.github.io/Mesto/
+либо тут
+https://tolkachev.site/
+
+Бэкэнд лежит тут:
+https://api.tolkachev.site/
