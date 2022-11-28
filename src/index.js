@@ -1,11 +1,23 @@
+import './pages/index.css';
+
+import Api from './modules/Api';
+import Card from './modules/Card';
+import CardList from './modules/CardList';
+import errorMessages from './modules/errorMessages';
+import Validation from './modules/FormValidator';
+import Popup from './modules/Popup';
+import PopupImage from './modules/PopupImage';
+import UserInfo from './modules/UserInfo';
+
 const
   popupNew = new Popup(document.querySelector('#popup-new')),
   popupProfile = new Popup(document.querySelector('#popup-edit')),
   popupImage = new PopupImage(document.querySelector('#popup-image')),
   validEdit = new Validation(document.forms.edit, errorMessages),
   validNew = new Validation(document.forms.new, errorMessages),
+  serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort12' : 'https://nomoreparties.co/cohort12',
   apiServer = new Api({
-    baseUrl: 'https://praktikum.tk/cohort12',
+    baseUrl: serverUrl,
     headers: {
       authorization: 'cf9507e2-f20f-44ff-8a3f-06f8e0491d03',
       'Content-Type': 'application/json'

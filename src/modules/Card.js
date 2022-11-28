@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor(name, url, func) {
     this.name = name;
     this.url = url;
