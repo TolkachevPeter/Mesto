@@ -2,7 +2,7 @@
 Cервис, где люди делятся фотографиями интересных мест
 
 
-### Version 0.0.3
+### Version 0.0.4
 
 # В работе использовались:
 - HTML
@@ -53,5 +53,7 @@ npm run build
 npm run deploy
 ```
 
-https://tolkachevpeter.github.io/Mesto/
+
+Бэкэнд находится тут (временно отключено):
+https://api.tolkachev.site/
 
